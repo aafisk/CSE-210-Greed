@@ -2,8 +2,11 @@ using Raylib_cs;
 
 class Game {
 
+    private List<Removable> removables = new List<Removable>();
+    private Player player = new Player();
+
     public Game() {
-        private List<Removable> rocks = new List<Removable>();
+
     }
 
     public void Play() {
