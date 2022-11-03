@@ -1,25 +1,27 @@
 class Position {
 
-    protected int X = 0;
-    protected int Y = 0;
+    protected int x = 0;
+    protected int y = 0;
+    protected int x_velocity = 0;
+    protected int y_velocity = 0;
     
     public Position() {
 
     }
 
     public int GetX() {
-        return X;
+        return x;
     }
 
-    public void SetX(int x) {
-        X = x;
+    public void SetX(int x_value) {
+        x = x_value;
     }
 
     public int GetY() {
-        return Y;
+        return y;
     }
 
-    public void SetY(int y) {
-        Y = y;
+    public void SetY(int y_value) {
+        y = y_value;
     }
 }

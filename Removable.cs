@@ -6,4 +6,9 @@ class Removable: Position {
     public Removable() {
 
     }
+
+    public void Advance() {
+        x += x_velocity;
+        y += y_velocity;
+    }
 }

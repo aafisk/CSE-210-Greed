@@ -24,7 +24,7 @@ class BigGem: Removable {
 class BigRock: Removable {
 
     public BigRock() {
-        pointValue = 3;
+        pointValue = -3;
     }
     
 }
