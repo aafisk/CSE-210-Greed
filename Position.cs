@@ -2,8 +2,7 @@ class Position {
 
     protected int x = 0;
     protected int y = 0;
-    protected int x_velocity = 0;
-    protected int y_velocity = 0;
+    protected Vector2 Velocity = new Vector2(0,0);
     
     public Position() {
 
