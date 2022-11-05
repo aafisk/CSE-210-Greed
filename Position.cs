@@ -1,26 +1,30 @@
+using Raylib_cs;
+using System.Numerics;
+
 class Position {
 
-    protected int x = 0;
-    protected int y = 0;
-    protected Vector2 Velocity = new Vector2(0,0);
+    protected Vector2 position { get; set; } = new Vector2(0, 0);
+    protected Vector2 Velocity { get; set; } = new Vector2(0, 0);
+    protected string aperance = "";
+    public Rectangle rectangle;
     
     public Position() {
 
     }
 
-    public int GetX() {
-        return x;
+    virtual public void Draw() {
+
     }
 
-    public void SetX(int x_value) {
-        x = x_value;
+    public void SetPosition(Vector2 newPosition) {
+        position = newPosition;
     }
 
-    public int GetY() {
-        return y;
+    public void SetVelocity(Vector2 newVelocity) {
+        Velocity = newVelocity;
     }
 
-    public void SetY(int y_value) {
-        y = y_value;
+    public Vector2 GetPosition() {
+        return position;
     }
 }
